@@ -117,17 +117,22 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
+            String message = "";
             if (someJobs.size() <= 0) {
-                System.out.println("No Results");
+//                System.out.println("No Results");
+                    message = "No Results";
             } else {
                 for ( HashMap<String, String> bundle : someJobs) {
-                    System.out.println("*****");
+                    message = "*****\n";
                     for (String key : bundle.keySet()) {
-                        System.out.println(key + ": " + bundle.get(key));
+                        message = message + key + ": " + bundle.get(key) + "\n";
+//                        System.out.println("*****" + key + ": " + bundle.get(key) + "*****");
                     }
-                    System.out.println();
-                    System.out.println("*****");
+                    message = message + "*****\n";
+
+//                    System.out.println("*****");
                 }
             }
+        System.out.println(message);
     }
 }
