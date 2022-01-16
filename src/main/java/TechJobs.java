@@ -125,8 +125,8 @@ public class TechJobs {
                     for (String key : bundle.keySet()) {
                         System.out.println(key + ": " + bundle.get(key));
                     }
-                    System.out.println("*****");
                     System.out.println();
+                    System.out.println("*****");
                 }
             }
     }
